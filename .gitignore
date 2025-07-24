@@ -1,0 +1,7 @@
+__pycahe__
+vqgan.ckpt
+vqvae_models.pth
+/vqvae_recon_one_test
+/vqvae_recon_one
+/datas_all_one
+/datas_all_test_one
