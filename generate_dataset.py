@@ -91,3 +91,6 @@ with torch.inference_mode():
                     img_patch = to_pil_image(unicode_to_img(code,quantizer,decoder,device)[0])
                     concat_img.paste(img_patch,(16*j,16*i))
             concat_img.save(f"vqvae_recon_one_test/{os.path.basename(path)}")
+
+
+####################PATTERN_4 エンコード部分で画像抽出、それをエンコードして並べていく#########################
