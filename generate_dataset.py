@@ -87,7 +87,7 @@ with torch.inference_mode():
             concat_img = Image.new('RGB',(512,256))
             for i in range(16):
                 for j in range(32):
-                    code = data[i+j]
+                    code = data[32*i+j]
                     img_patch = to_pil_image(unicode_to_img(code,quantizer,decoder,device)[0])
                     concat_img.paste(img_patch,(16*j,16*i))
             concat_img.save(f"vqvae_recon_one_test/{os.path.basename(path)}")
